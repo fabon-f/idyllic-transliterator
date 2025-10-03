@@ -11,6 +11,9 @@ importers:
 
   .:
     dependencies:
+      '@li/regexp-escape-polyfill':
+        specifier: jsr:^0.3.4
+        version: '@jsr/li__regexp-escape-polyfill@0.3.4'
       vue:
         specifier: ^3.5.22
         version: 3.5.22(typescript@5.9.3)
@@ -67,6 +70,9 @@ packages:
 
   '@jridgewell/sourcemap-codec@1.5.5':
     resolution: {integrity: sha512-cYQ9310grqxueWbl+WuIUIaiUaDcj7WOq5fVhEljNVgRfOUhY9fy2zTvfoqWsnebh8Sl70VScFbICvJnLKB0Og==}
+
+  '@jsr/li__regexp-escape-polyfill@0.3.4':
+    resolution: {integrity: sha512-UGHzM9zAlRt0DUQIgsXAuXBd9jdzJ3t1v+fHsIcIj2fbUKplO9A8v2FE/w9KZo8hs79n5IamuBvqCTndGADM2Q==, tarball: https://npm.jsr.io/~/11/@jsr/li__regexp-escape-polyfill/0.3.4.tgz}
 
   '@napi-rs/wasm-runtime@1.0.5':
     resolution: {integrity: sha512-TBr9Cf9onSAS2LQ2+QHx6XcC6h9+RIzJgbqG3++9TUZSH204AwEy5jg3BTQ0VATsyoGj4ee49tN/y6rvaOOtcg==}
@@ -483,6 +489,8 @@ snapshots:
     optional: true
 
   '@jridgewell/sourcemap-codec@1.5.5': {}
+
+  '@jsr/li__regexp-escape-polyfill@0.3.4': {}
 
   '@napi-rs/wasm-runtime@1.0.5':
     dependencies:

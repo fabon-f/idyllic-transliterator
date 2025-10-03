@@ -8,6 +8,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@li/regexp-escape-polyfill": "jsr:^0.3.4",
     "vue": "^3.5.22"
   },
   "devDependencies": {
