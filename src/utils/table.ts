@@ -2,6 +2,7 @@ import { regExpEscape } from '@li/regexp-escape-polyfill';
 
 export type TransliterationTable = Record<string, string>;
 export interface TransliterationSystem {
+  id: string;
   name: string;
   table: TransliterationTable;
 }

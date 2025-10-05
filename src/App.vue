@@ -2,10 +2,17 @@
 import { computed, ref } from 'vue';
 import { createTransliterator } from './utils/table';
 import transliterations from './utils/transliterations';
+import { useSelectFromKeyValue } from './composables/useSelectFromKeyValue';
 
 const input = ref('');
-const selectedTransliteration = ref(transliterations[0]);
-const transliterator = computed(() => createTransliterator(selectedTransliteration.value.table));
+const {
+  entries: transliterationEntries,
+  selectedKey: selectedTransliterationKey,
+  selectedValue: selectedTransliteration,
+} = useSelectFromKeyValue(transliterations);
+const transliterator = computed(() =>
+  createTransliterator(selectedTransliteration.value.table),
+);
 const result = computed(() => transliterator.value(input.value));
 </script>
 
@@ -16,8 +23,8 @@ const result = computed(() => transliterator.value(input.value));
     <div>
       <label>
         <span>transliteration system:</span>
-        <select v-model="selectedTransliteration">
-          <option v-for="transliteration in transliterations" :value="transliteration" :key="transliteration.name">{{ transliteration.name }}</option>
+        <select v-model="selectedTransliterationKey">
+          <option v-for="[key, { name }] in transliterationEntries" :value="key" :key="key">{{ name }}</option>
         </select>
       </label>
     </div>

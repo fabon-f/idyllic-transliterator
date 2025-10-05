@@ -2,6 +2,7 @@ import { createTransliterationTableWithLowerCase, type TransliterationSystem } f
 
 // https://www.loc.gov/catdir/cpso/romanization/ukrainia.pdf
 export const alaLc: TransliterationSystem = {
+  id: 'alalc-uk',
   name: 'ALA-LC (Library of Congress) - Ukrainian',
   table: createTransliterationTableWithLowerCase({
     А: 'A',
