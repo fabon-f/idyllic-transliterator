@@ -13,17 +13,17 @@
   },
   "devDependencies": {
     "@tsconfig/strictest": "^2.0.6",
-    "@types/node": "^24.6.2",
+    "@types/node": "^24.9.1",
     "@vitejs/plugin-vue": "^6.0.1",
     "@vue/tsconfig": "^0.8.1",
     "typescript": "5.9.3",
-    "vite": "npm:rolldown-vite@7.1.15",
-    "vue-tsc": "^3.1.0"
+    "vite": "npm:rolldown-vite@latest",
+    "vue-tsc": "^3.1.2"
   },
   "packageManager": "pnpm@10.18.0",
   "pnpm": {
     "overrides": {
-      "vite": "npm:rolldown-vite@7.1.15"
+      "vite": "npm:rolldown-vite@latest"
     }
   }
 }
