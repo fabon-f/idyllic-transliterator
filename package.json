@@ -13,12 +13,12 @@
   },
   "devDependencies": {
     "@tsconfig/strictest": "^2.0.8",
-    "@types/node": "^24.10.1",
-    "@vitejs/plugin-vue": "^6.0.2",
+    "@types/node": "^25.0.1",
+    "@vitejs/plugin-vue": "^6.0.3",
     "@vue/tsconfig": "^0.8.1",
     "typescript": "5.9.3",
     "vite": "npm:rolldown-vite@latest",
-    "vue-tsc": "^3.1.5"
+    "vue-tsc": "^3.1.8"
   },
   "packageManager": "pnpm@10.24.0",
   "pnpm": {
